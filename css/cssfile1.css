@@ -52,7 +52,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: purple;
+  background-color: gray;
 }
 .orange-item {
   color: orange;
