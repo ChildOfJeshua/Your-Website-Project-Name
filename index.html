@@ -113,6 +113,15 @@
 	  <source src="sounds/random_noise.m4a" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio>
-	
+
+	<canvas width="400" height="200"></canvas>
+
+    <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 100, 100);
+    </script>
 </body>
 </html>
