@@ -27,11 +27,11 @@
 	<img src="images/image_strawberry.jpg" alt="Picture of Strawberries">
 
 
-	<table>
+	<table class="flex-columns">
 	<tr>
-		<th> Orange Colored Fruits </th>
-		<th> Purple Colored Fruits </th>
-		<th> Yellow Colored Fruits </th>
+		<th class="card"> Orange Colored Fruits </th>
+		<th class="card"> Purple Colored Fruits </th>
+		<th class="card"> Yellow Colored Fruits </th>
 
 	</tr>
 	<tr>
@@ -72,13 +72,18 @@
 
 	</table>
 	
+
+	<br>
+
+	<section>
+	<div id="accordion">
 	<h2> Favorite Hobbies </h2>
+
 	<ul>
 		<li> Drawing </li>
 		<li> Painting </li>
 		<li> Reading </li>
 	</ul>
-
 
 	<h2> Favorite Subjects </h2>
 	<ul>
@@ -86,6 +91,8 @@
 		<li> Art </li>
 		<li> English </li>
 	</ul>
+	</div>
+	</section>
 
 	<h2> Random Iframe Section </h2>
 	<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Box">  </iframe>
@@ -117,11 +124,21 @@
 	<canvas width="400" height="200"></canvas>
 
     <script>
+	//Canvas stuff
         const canvas = document.querySelector('canvas');
         const ctx = canvas.getContext('2d');
 
         ctx.fillStyle = 'blue';
         ctx.fillRect(50, 50, 100, 100);
+
+
+	//jQuery stuff
+	$("#accordion").accordion({
+		collapsible: true,
+		heightStyle: "content",
+		animate: 300
+	});
+
     </script>
 </body>
 </html>
