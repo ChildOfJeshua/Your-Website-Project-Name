@@ -153,11 +153,11 @@
 		border-radius: 8px;
 		font-size: 1rem;
 		font-weight: 500;
-		transition: transform 0.2s, backgroud 0.2s;
+		transition: transform 0.2s, background 0.2s;
 	}
 
 	.flex-columns .card:hover {
-		background: var(--color-primary);
+		background: var(--color-primary-dark);
 		transform: translateX(6px);
 	}
 
@@ -182,7 +182,7 @@
 
 	.flex-rows .card:hover {
 		background: var(--color-primary);
-		transform: translateY(-4px)
+		transform: translateY(-4px);
 	}
 	
 
