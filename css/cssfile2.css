@@ -1,0 +1,174 @@
+	/* Reset */
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	
+	/* Color Pencils Group */
+        :root {
+		--color-primary: purple;
+		--color-primary-dark: indigo;
+		--color-primary-light: violet;
+		--color-meteorite: darkviolet;
+		--color-dark: #1d1e20;
+		--color-gray: #727586;
+		--color-gray-light: #f2f3f6;
+		--color-light: #fff;
+		--color-success: blueviolet;
+		--color-warning: magenta;
+        }
+
+
+	/* navigation stick above page & styling */
+        nav {
+            background-color: var(--color-dark);
+	    opacity: 0.87
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+	/* helps the navigation bar horizontally */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+	
+        /* Spacing within navigation bar so they don't all get sandwiched into one word */
+        nav a {
+            display: block;
+            color: var(--color-light);
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s ease;
+            font-weight: 500;
+        }
+        
+	/* Reponsive hover for the words in the nav bar */
+        nav a:hover {
+            background-color: var(--color-primary);
+        }
+        
+
+	/* Main Focus outside under navigation bar */
+	body {
+		font-family: 'Segoe UI', sans-serif;
+		background: #f0f4f8;
+		color: #333;
+	}
+
+
+	/* header section */
+	header {
+		background-color: var(--color-dark);
+		color: var(--color-light);
+		padding: 170px 20px;
+		text-align: center;	
+		font-size: 58px;
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+
+	/* Footer below everything */
+        footer {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+	/* First paragraph of the footer section */
+        footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+	/* Colors for as such at rest or non-engaged */
+        footer a {
+            color: var(--color-meteorite);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+	/* animation for the footer section */
+        footer a:hover {
+            color: var(--color-primary-light);
+        }
+        
+	/* vertical spacing between footer information and button */
+        .social-links {
+            margin-top: 20px;
+        }
+        
+	/* Colors for as such at rest or non-engaged */
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px;
+            background-color: var(--color-primary);
+            border-radius: 5px;
+            transition: background-color 0.3 ease, transform 0.3s ease;
+        }
+
+	/* animation for the social media links section on hover */
+	.social-links a img {
+		width: 24px;
+		height: 24px;
+		display: block;
+		filter: brightness(1);
+		transition: filter 0.3 ease;
+	}
+
+        /* animation for the media links section */
+        .social-links a:hover {
+            background-color: var(--color-meteorite);
+	    transform: scale(1.1);
+        }
+
+	.social-links a: hover img {
+		filter: brightness(1.2);
+	}
+        
+	/* Mobile Device Specifics */
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-section {
+                padding: 40px 20px;
+            }
+            
+            .hero-section h2 {
+                font-size: 1.7rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                text-align: center;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+	
+        }
+
