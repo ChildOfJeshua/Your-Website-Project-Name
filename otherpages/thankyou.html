@@ -22,9 +22,27 @@
 	<header>
 			<div>
 			<h1> COMING SOON! </strong> </h1>
+			<h7 id="title">5.26.2026</h7>
+			<br>
+                        <button id="myButton"> Can't Wait</button>
 			</div>
 
 	</header>
+
+
+    <script>
+        // Select elements
+        const title = document.getElementById('title');
+        const button = document.getElementById('myButton');
+
+        // Modify content
+        title.textContent = 'Date: 5.26.2002';
+
+        // Add event listener
+        button.addEventListener('click', function() {
+            title.textContent = 'Me Neither!';
+        });
+    </script>
 
     <!-- Footer -->
     <footer>
